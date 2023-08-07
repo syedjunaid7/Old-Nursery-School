@@ -1,0 +1,46 @@
+aside {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  .aside-sec {
+    position: relative;
+    background: #ef4c7b url("/assets/images/aside-bottom-img.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    width: 70%;
+    height: 25vh;
+    border-radius: 0.7rem;
+    h1 {
+      font-weight: 400;
+      font-size: 2rem;
+      width: 50%;
+      color: white;
+    }
+    button {
+      color: white;
+    }
+  }
+}
+@media (max-width: 768px) {
+  aside {
+    .aside-sec {
+      flex-direction: column;
+      gap: 0;
+      padding: 2rem 2rem;
+      width: 90%;
+      height: auto;
+      h1 {
+        width: 100%;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

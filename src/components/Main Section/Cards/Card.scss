@@ -1,0 +1,35 @@
+.portrait-card {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    padding-bottom: 20px;
+    margin: 10px;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.1);
+    .card-bottom{
+      padding: 0 3px 12px 10px;
+    }
+    .card-image {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .card-heading {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-top: 15px;
+      margin-bottom: 0px;
+    }
+    p{
+      text-align: center;
+      font-size: 0.9rem;
+      margin-bottom: 50px;
+    }
+    button{
+      color: white;
+    }
+  }
+  
