@@ -15,10 +15,21 @@
 
     img {
       width: 40%;
+      animation: moveImage2 3s linear infinite;
+    }
+    .head-top{
+      color: white;
+      position: absolute;
+      top: 12vh;
     }
     p{
       font-size: 1.1rem;
       line-height: 50px;
+    }
+    div{
+      h1{
+        color: white;
+      }
     }
   }
 
@@ -53,6 +64,9 @@
     font-size: 1.1rem;
     line-height: 50px;
   }
+  h1{
+    color: #005ca8;
+  }
   #container {
     width: 100%;
     #movingImage {
@@ -67,6 +81,15 @@
       }
       50% {
         transform: translateX(calc(-30%));
+      }
+    }
+    @keyframes moveImage2 {
+      0%,
+      100% {
+        transform: translateX(-5%);
+      }
+      50% {
+        transform: translateX(calc(20%));
       }
     }
   }
@@ -86,10 +109,17 @@
 @media (max-width: 768px) {
     .sec1{
         flex-direction: column;
-        padding: 0 1.5rem;
+        padding: 2rem 1.5rem;
         gap: 1rem;
+        p{
+          line-height: 32px;
+        }
         img{
             width: 60%;
+        }
+        .head-top{
+          position: static;
+          margin-bottom: 0;
         }
     }
     .sec2{
@@ -101,7 +131,15 @@
         #container {
             #movingImage {
             width: 60%;
-            animation: none;
+            @keyframes moveImage {
+              0%,
+              100% {
+                transform: translateX(-10%);
+              }
+              50% {
+                transform: translateX(calc(15%));
+              }
+            }
         }}
     }
     .sec4{

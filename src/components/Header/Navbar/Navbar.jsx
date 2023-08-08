@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 export default function Navbar() {
   const [show, handleShow] = useState(false);
   const [click, setClick] = useState(false);
+  // const [show, setShow] = useState(false)
   const navigate = useNavigate();
 
   const handleScroll = () => {
@@ -34,7 +35,7 @@ export default function Navbar() {
       <div className={`navbar ${click ? "active-menu" : null}`}>
         {navbarData.map((item, index) => (
           <nav key={index}>
-            <NavLink className="nav-link" to={`${item.path}`}>
+            <NavLink className="nav-link" to={`${item.path}`} onClick={() => setClick(false)}>
               {item.linkName}
             </NavLink>
           </nav>

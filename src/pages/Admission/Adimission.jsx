@@ -5,10 +5,12 @@ import icon2 from "../../assets/images/icon4.png";
 import icon3 from "../../assets/images/icon5.png";
 import icon4 from "../../assets/images/icon3.png";
 import { Tooltip } from "react-tooltip";
+import bird from "../../assets/images/bird.png"
 
 export default function Adimission() {
   return (
     <div>
+    <h1>Admission</h1>
       <div className="admission-container">
         <section className="sec1-Admission">
           <h1>Welcoming Our Children, Back To Their Favorite Preschool.</h1>
@@ -40,6 +42,7 @@ export default function Adimission() {
         </section>
 
         <section className="sec2-Admission">
+        <img src={bird}/>
           <h1>Preschool Admission Form</h1>
           <form>
             <input

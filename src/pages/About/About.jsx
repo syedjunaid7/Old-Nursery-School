@@ -6,9 +6,10 @@ import logos from "../../assets/images/4.png";
 export default function About() {
   return (
     <>
-      <section className="sec1">
+      <section className="sec1">   
+      <h1 className="head-top">About Us</h1> 
         <div>
-          <h1>Preschool Activities</h1>
+          <h1 >Preschool Activities</h1>
           <p>
             At Little Millennium, the emphasis is on building the right
             foundation for the child every day through play activities and
@@ -51,7 +52,7 @@ export default function About() {
 
       <section className="sec3">
         <div>
-          <h1>Preschool Infrastructure</h1>
+          <h1 style={{color :"white"}}>Preschool Infrastructure</h1>
           <p>
             At Little Millennium, we follow a thoughtfully formulated design
             language when deciding on preschool infrastructure, that provides a
