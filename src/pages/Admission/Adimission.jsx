@@ -3,7 +3,7 @@ import "./Admission.scss";
 import icon1 from "../../assets/images/icon2.png";
 import icon2 from "../../assets/images/icon4.png";
 import icon3 from "../../assets/images/icon5.png";
-
+import icon4 from "../../assets/images/icon3.png";
 import { Tooltip } from "react-tooltip";
 
 export default function Adimission() {
@@ -22,16 +22,20 @@ export default function Adimission() {
           </p>
 
           <div className="icons-box">
-            <img src={icon1} alt="logo"/>
+            <img src={icon1} alt="logo" />
             <span>Sceintifically developed curriculum</span>
           </div>
           <div className="icons-box">
-            <img src={icon2} alt="logo"/>
+            <img src={icon2} alt="logo" />
             <span>Well Trained Teachers</span>
           </div>
           <div className="icons-box">
-            <img src={icon3} alt="logo"/>
+            <img src={icon3} alt="logo" />
             <span>Excellent Infrastructure</span>
+          </div>
+          <div className="icons-box">
+            <img src={icon4} />
+            <span>Blended Learning Approach</span>
           </div>
         </section>
 
@@ -108,6 +112,7 @@ export default function Adimission() {
               style={{
                 display: "flex",
                 flexDirection: "column",
+                padding: "0 2rem",
               }}
             >
               <input
