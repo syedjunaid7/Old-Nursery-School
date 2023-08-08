@@ -22,15 +22,15 @@ export default function Adimission() {
           </p>
 
           <div className="icons-box">
-            <img src={icon1} />
+            <img src={icon1} alt="logo"/>
             <span>Sceintifically developed curriculum</span>
           </div>
           <div className="icons-box">
-            <img src={icon2} />
+            <img src={icon2} alt="logo"/>
             <span>Well Trained Teachers</span>
           </div>
           <div className="icons-box">
-            <img src={icon3} />
+            <img src={icon3} alt="logo"/>
             <span>Excellent Infrastructure</span>
           </div>
         </section>
