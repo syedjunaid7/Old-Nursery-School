@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Main.scss";
 import Card from "./Cards/Card";
 import kidPlaying from "../../assets/images/kid-playing.png";
 import InputBox from "./InputBox";
 import Aside from "./Aside Section/Aside";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 function Main() {
+  useEffect(() => {
+    AOS.init({duration : 2000})
+  },[])
   return (
     <>
       <main>
@@ -13,14 +18,14 @@ function Main() {
       </main>
       <section className="sec-1">
         <h1>FACILITIES WE PROVIDE</h1>
-        <div className="card-container">
+        <div className="card-container" data-aos="flip-right">
           <Card />
         </div>
       </section>
       <section className="sec-2">
         <div className="bannerConatiner">
           <div className="img-box">
-            <img src={kidPlaying} />
+            <img src={kidPlaying} data-aos="fade-right"/>
           </div>
           <div className="content-box">
             <h1>

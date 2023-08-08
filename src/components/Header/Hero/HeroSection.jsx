@@ -4,7 +4,12 @@ import CountUp from "react-countup";
 import leftImg from "../../../assets/images/hero-1.png";
 import rightImg from "../../../assets/images/hero-2.png";
 import { motion } from "framer-motion";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 export default function HeroSection() {
+  useEffect(() => {
+    AOS.init({duration : 2000})
+  },[])
   return (
     <section className="hero">
       <h1 class="typing-effect">Better Future For Your Kids</h1>
@@ -61,9 +66,9 @@ export default function HeroSection() {
         </motion.div>
       </div>
       <div className="hero-content">
-        <h2>WELCOME TO Little Millenium</h2>
+        <h2 data-aos="fade-up">WELCOME TO Little Millenium</h2>
         <h6>About Little Millenium</h6>
-        <p>
+        <p data-aos="fade-down">
           ‘The name Little Millenium comes from the Latin language and means, educate,
           teach and instruct’.LITTLE MILLENIUM Early Childhood Center is Dubai’s first
           early years STEM approach nursery. We fulfill the statutory

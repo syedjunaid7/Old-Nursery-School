@@ -11,37 +11,48 @@ h1 {
   justify-content: center;
   gap: 2rem;
   padding: 5rem 0;
+.location-box{
+h3{
+  margin: 0;
+}
+  p {
+    text-align: left;
+    margin: 0;
+    margin-left: 1rem;
+    font-size: 1rem;
+    
+  }
+}
   .cards {
     display: flex;
     align-items: center;
     flex-direction: row;
     cursor: pointer;
     padding: 1rem;
-    .icon-mod{
-      background-color: #F3A616;
+    .icon-mod {
+      background-color: #f3a616;
       padding: 0rem 1.5rem;
-      border-radius: .3rem;
+      border-radius: 0.3rem;
     }
-    svg{
+    svg {
       font-size: 2rem;
-      color: #ffffff;  
-      &:hover{
+      color: #ffffff;
+      &:hover {
         color: wheat;
-      }   
+      }
     }
-    h3{
+    h3 {
       text-align: left;
       margin-left: 1rem;
     }
-    span{
+    span {
       margin-left: 1rem;
       font-size: 1rem;
-
     }
   }
 }
 .contactUs-div {
-  background-color: #30ADC0;
+  background-color: #bf30c05c;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -80,7 +91,7 @@ h1 {
   }
 }
 @media (max-width: 768px) {
-  h1{
+  h1 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
@@ -90,7 +101,7 @@ h1 {
     .cards {
       width: auto;
     }
-    iframe{
+    iframe {
       width: fit-content;
       transform: translateX(30px);
     }
@@ -100,11 +111,9 @@ h1 {
     padding: 2rem 1rem 5rem 1rem;
     .map {
       width: 100%;
-      
     }
     .right {
       height: 60vh;
-      
     }
     .left {
       margin-bottom: 30px;

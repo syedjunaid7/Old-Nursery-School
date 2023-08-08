@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Admission.scss";
 import icon1 from "../../assets/images/icon2.png";
 import icon2 from "../../assets/images/icon4.png";
 import icon3 from "../../assets/images/icon5.png";
 import icon4 from "../../assets/images/icon3.png";
 import { Tooltip } from "react-tooltip";
-import bird from "../../assets/images/bird.png"
-
+import bird from "../../assets/images/bird.png";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 export default function Adimission() {
+    useEffect(() => {
+    AOS.init({duration : 2000})
+  },[])
   return (
     <div>
-    <h1>Admission</h1>
+      <h1>Admission</h1>
       <div className="admission-container">
         <section className="sec1-Admission">
           <h1>Welcoming Our Children, Back To Their Favorite Preschool.</h1>
@@ -25,7 +29,7 @@ export default function Adimission() {
 
           <div className="icons-box">
             <img src={icon1} alt="logo" />
-            <span>Sceintifically developed curriculum</span>
+            <p>Sceintifically developed curriculum</p>
           </div>
           <div className="icons-box">
             <img src={icon2} alt="logo" />
@@ -41,8 +45,8 @@ export default function Adimission() {
           </div>
         </section>
 
-        <section className="sec2-Admission">
-        <img src={bird}/>
+        <section className="sec2-Admission" data-aos="zoom-in">
+          <img src={bird} />
           <h1>Preschool Admission Form</h1>
           <form>
             <input
@@ -111,15 +115,14 @@ export default function Adimission() {
               place="bottom"
             />
             <br></br>
-            <div
-            >
+            <div>
               <input
                 type="text"
                 className="mssgBox"
                 placeholder="Enter Your Message"
               />
-              <button>Submit</button>
             </div>
+            <button>Submit</button>
           </form>
         </section>
       </div>

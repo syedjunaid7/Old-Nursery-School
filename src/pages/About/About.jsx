@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.scss";
 import img from "../../assets/images/1.png";
 import img2 from "../../assets/images/19.png";
 import logos from "../../assets/images/4.png";
+import vision from "../../assets/images/vision.png";
+import mission from "../../assets/images/mission.png";
+import philosphy from "../../assets/images/philosophy.png";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 export default function About() {
+  useEffect(() => {
+    AOS.init({duration : 2000})
+  },[])
   return (
     <>
-      <section className="sec1">   
-      <h1 className="head-top">About Us</h1> 
+      <h1 className="head-top">About Us</h1>
+      <section className="sec1">
         <div>
-          <h1 >Preschool Activities</h1>
+          <h1>Preschool Activities</h1>
           <p>
             At Little Millennium, the emphasis is on building the right
             foundation for the child every day through play activities and
@@ -24,35 +32,40 @@ export default function About() {
       </section>
 
       <section className="sec2">
-        <div>
-          <h1>Kids Marathon</h1>
-          <ul>
-            <li>
-              🎀 Little Millennium Kids Marathon is a short distance run by
-              preschool children to support the cause against child abuse and
-              promote the healthy development of children.
-            </li>
-            <li>
-              🎀 The mission is to celebrate running, promote physical fitness
-              and encourage a healthier lifestyle.
-            </li>
-            <li>
-              🎀 Kids Marathon extends the spirit of sports and physical
-              education by providing young children with a platform to run and
-              express themselves freely.
-            </li>
-            <li> 🎀 The event witnessed a footfall of 4000 people.</li>
-            <li>
-              🎀 Little Millennium’s entire community of children, parents and
-              management actively participated in the event.
-            </li>
-          </ul>
+        <div data-aos="fade-up">
+          <div>
+            <img src={vision} alt="vision" />
+            <h4>Vision</h4>
+            <p>
+              To Enable, Energise And Enhance Childhood By Fostering Growth Of
+              Mind, Body And Spirit, Which Will Help Children To Become Lifelong
+              Learners.
+            </p>
+          </div>
+          <div>
+            <img src={mission} alt="mission" />
+            <h4>Mission</h4>
+            <p>
+              To Nurture Young Minds In A Culturally Appropriate Environment And
+              Provide Opportunities That Will Help Them Realise Their True
+              Potential.
+            </p>
+          </div>
+          <div>
+            <img src={philosphy} alt="vision" />
+            <h4>Philosophy</h4>
+            <p>
+              To Provide Each Child With A Culturally Appropriate Environment,
+              Moral Values, Love And Protection Needed For Healthy Growth Of
+              Body, Mind And Spirit.
+            </p>
+          </div>
         </div>
       </section>
 
       <section className="sec3">
         <div>
-          <h1 style={{color :"white"}}>Preschool Infrastructure</h1>
+          <h1 style={{ color: "white" }}>Preschool Infrastructure</h1>
           <p>
             At Little Millennium, we follow a thoughtfully formulated design
             language when deciding on preschool infrastructure, that provides a
@@ -72,8 +85,8 @@ export default function About() {
       </section>
 
       <section className="sec4 sec3">
-        <img src={logos} />
-        <div>
+        <img src={logos} data-aos="fade-right"/>
+        <div data-aos="fade-left">
           <h1>Kickers Club</h1>
           <p>
             ♛ Little Millennium Kickers Club- India’s First ever Unique Sports

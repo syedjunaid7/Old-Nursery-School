@@ -17,7 +17,7 @@
   padding: 1rem;
   transform: translate(0px, -50px);
   img{
-    width: 10%;
+    width: 14%;
   }
   .icons-box{
     display: flex;
@@ -31,9 +31,13 @@
   }
   h1{
     color: white;
+    text-align: left;
   }
   p{
     color: white;
+    margin: 0;
+    text-align: left;
+    line-height: 2.4rem;
   }
 }
 .sec2-Admission {
@@ -57,9 +61,7 @@
   h1 {
     color: white;
   }
-  .mssgBox {
-    padding: 3rem 5rem;
-  }
+
   button {
     color: white;
     margin-top: 25px;
@@ -81,8 +83,10 @@
     .sec1-Admission{
         text-align: center;
         .icons-box{
-            padding: 1rem 0;
             gap: 0;
+         }
+         img{
+          width: 25%;
          }
     }
 
