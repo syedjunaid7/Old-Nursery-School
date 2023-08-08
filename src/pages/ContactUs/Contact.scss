@@ -1,0 +1,40 @@
+.cards-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+  .cards {
+    width: 30%;
+    display: block;
+    cursor: pointer;
+    background: #f5f5f5;
+    padding: 1rem;
+  }
+}
+.contactUs-div {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  gap: 2rem;
+  h1 {
+    color: black;
+  }
+}
+@media (max-width: 768px) {
+  .cards-box {
+    padding: 1rem;
+    flex-direction: column;
+    .cards {
+      width: auto;
+    }
+  }
+  .contactUs-div {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    .map {
+      width: 100%;
+    }
+  }
+}
