@@ -1,8 +1,8 @@
 import React from "react";
 import "./Footer.scss";
 import logo from "../../assets/images/logo.gif";
-import { FaFacebook } from "react-icons/fa";
-import { GrInstagram } from "react-icons/gr";
+// import { FaFacebook } from "react-icons/fa";
+// import { GrInstagram } from "react-icons/gr";
 import { BiChevronRight } from "react-icons/bi";
 import { HiLocationMarker } from "react-icons/hi";
 import { FaMobileAlt } from "react-icons/fa";
