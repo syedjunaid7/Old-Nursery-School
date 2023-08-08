@@ -21,8 +21,9 @@ export default function Footer() {
         <div className="left">
           <img src={logo} />
           <p>
-            The LITTLE MILLENIUM Learning Program is based on the UK Statutory Early Years
-            Foundation Stage integrated with a strong STEAM based approach.
+            The LITTLE MILLENIUM Learning Program is based on the UK Statutory
+            Early Years Foundation Stage integrated with a strong STEAM based
+            approach.
           </p>
           {/* <div>
             <a href="https://www.facebook.com/erudioecc" target="_blank">
@@ -36,8 +37,8 @@ export default function Footer() {
         <div>
           <div className="centre flex-left">
             <h1>QUICK LINKS</h1>
-            {navbarData.map((item) => (
-              <div onClick={() => navigate(item.path)}>
+            {navbarData.map((item, index) => (
+              <div key={index} onClick={() => navigate(item.path)}>
                 <span>
                   <BiChevronRight
                     style={{
@@ -58,7 +59,8 @@ export default function Footer() {
                 <HiLocationMarker />
               </span>
               <span>
-              A640 Gtb Nagar, Labour Chauraha,<br/> Prayagraj, Kareli, Allahabad - 211016
+                A640 Gtb Nagar, Labour Chauraha,
+                <br /> Prayagraj, Kareli, Allahabad - 211016
               </span>
             </p>
             <p>
