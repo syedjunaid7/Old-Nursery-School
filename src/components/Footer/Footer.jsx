@@ -15,11 +15,12 @@ import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
   const navigate = useNavigate();
+
   return (
     <>
       <footer>
         <div className="left">
-          <img src={logo} />
+          <img src={logo} onClick={() => navigate("/")}/>
           <p>
             The LITTLE MILLENIUM Learning Program is based on the UK Statutory
             Early Years Foundation Stage integrated with a strong STEAM based

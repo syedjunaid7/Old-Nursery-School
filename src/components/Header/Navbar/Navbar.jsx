@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 export default function Navbar() {
   const [show, handleShow] = useState(false);
   const [click, setClick] = useState(false);
+  const navigate = useNavigate();
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -28,7 +29,7 @@ export default function Navbar() {
     <div className={`nav-container ${show ? "show-shadow" : ""}`}>
       <div>
         {/* <FaUserCircle className="admin-logo" /> */}
-        <img className="" src={logo} alt="logo" />
+        <img className="" src={logo} alt="logo" onClick={() => navigate("/")}/>
       </div>
       <div className={`navbar ${click ? "active-menu" : null}`}>
         {navbarData.map((item, index) => (

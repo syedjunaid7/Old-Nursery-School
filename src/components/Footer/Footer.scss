@@ -21,6 +21,11 @@ footer {
     flex-direction: column;
     img {
       width: 17rem;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
     p {
       font-size: 0.9rem;
