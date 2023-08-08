@@ -3,10 +3,6 @@ footer {
   background: -moz-linear-gradient(90deg, rgba(255,199,199,1) 3%, rgba(241,8,111,0.5551470588235294) 59%, rgba(199,255,218,1) 100%, rgba(255,247,235,1) 100%);
   background: -webkit-linear-gradient(90deg, rgba(255,199,199,1) 3%, rgba(241,8,111,0.5551470588235294) 59%, rgba(199,255,218,1) 100%, rgba(255,247,235,1) 100%);
   background: linear-gradient(90deg, rgba(255,199,199,1) 3%, rgba(241,8,111,0.5551470588235294) 59%, rgba(199,255,218,1) 100%, rgba(255,247,235,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc7c7",endColorstr="#fff7eb",GradientType=1);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -28,7 +24,7 @@ footer {
     }
     p {
       font-size: 0.9rem;
-      font-weight: 100;
+      font-weight: 400;
     }
     .icons {
       transition: transform 0.3s ease-in-out;
@@ -53,7 +49,6 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 1.8rem;
     transform: translateX(-160px);
     h1 {
       font-weight: 500;
@@ -111,6 +106,11 @@ footer {
 
 @media (max-width: 768px) {
   footer {
+    font-weight: 600;
+    background: rgb(252, 226, 226);
+    background: -moz-linear-gradient(90deg, rgba(255,199,199,1) 3%, rgba(241,8,111,0.5551470588235294) 59%, rgba(199,255,218,1) 100%, rgba(255,247,235,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,199,199,1) 3%, rgba(253, 192, 219, 0.45) 59%, rgba(199,255,218,1) 100%, rgba(255,247,235,1) 100%);
+    background: linear-gradient(90deg, rgba(255,199,199,1) 3%, rgba(248, 164, 202, 0.555) 59%, rgba(199,255,218,1) 100%, rgba(255,247,235,1) 100%);
     flex-direction: column;
     div {
       flex-direction: column;
@@ -128,6 +128,7 @@ footer {
       }
       p {
         margin-left: 50px;
+        font-weight: 600;
       }
     }
   }
