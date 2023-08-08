@@ -33,8 +33,8 @@ export default function ContactUs() {
           <iframe
           className="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28827.273087925554!2d81.78483586091998!3d25.4245817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398535cc6eccc05d%3A0xfa385626af6ec935!2sLittle%20Millennium%20Convent%20School!5e0!3m2!1sen!2sin!4v1691494301376!5m2!1sen!2sin"
-            width="600"
-            height="450"
+            width="900"
+            height="600"
             style={{ border: "0" }}
             allowfullscreen=""
             loading="lazy"

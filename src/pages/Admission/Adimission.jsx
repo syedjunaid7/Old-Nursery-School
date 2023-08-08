@@ -109,11 +109,6 @@ export default function Adimission() {
             />
             <br></br>
             <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                padding: "0 2rem",
-              }}
             >
               <input
                 type="text"

@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="left">
           <img src={logo} onClick={() => navigate("/")}/>
           <p>
-            The LITTLE MILLENIUM Learning Program is based on the UK Statutory
+            The <strong>Little Millenium</strong> Learning Program is based on the UK Statutory
             Early Years Foundation Stage integrated with a strong STEAM based
             approach.
           </p>

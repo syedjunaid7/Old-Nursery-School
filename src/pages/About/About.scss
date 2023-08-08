@@ -3,9 +3,6 @@
     font-size: 2.5rem;
     font-weight: 600;
   }
-  p {
-    font-size: 1.1rem;
-  }
   .sec1 {
     width: fit-content;
     display: flex;
@@ -19,11 +16,16 @@
     img {
       width: 40%;
     }
+    p{
+      font-size: 1.1rem;
+      line-height: 50px;
+    }
   }
 
   .sec2 {
     background: #f6f2fc;
     padding: 5rem;
+    
     div {
       color: black;
       text-align: center;
@@ -47,6 +49,10 @@
   padding: 3rem;
   gap: 15rem;
   color: white;
+  p{
+    font-size: 1.1rem;
+    line-height: 50px;
+  }
   #container {
     width: 100%;
     #movingImage {
