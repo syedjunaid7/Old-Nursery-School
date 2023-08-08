@@ -1,8 +1,7 @@
 footer {
-  background: rgb(255,199,199);
-  background: -moz-linear-gradient(90deg, rgba(255,199,199,1) 3%, rgba(241,8,111,0.5551470588235294) 59%, rgba(199,255,218,1) 100%, rgba(255,247,235,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(255,199,199,1) 3%, rgba(241,8,111,0.5551470588235294) 59%, rgba(199,255,218,1) 100%, rgba(255,247,235,1) 100%);
-  background: linear-gradient(90deg, rgba(255,199,199,1) 3%, rgba(241,8,111,0.5551470588235294) 59%, rgba(199,255,218,1) 100%, rgba(255,247,235,1) 100%);
+  
+  background: rgba(255, 148, 148, 0.537) url("../../assets//images/Asset45.png");
+  background-position: top;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -29,7 +28,8 @@ footer {
     }
     p {
       font-size: 0.9rem;
-      font-weight: 400;
+      font-weight: 500;
+    letter-spacing: 0.9px;
     }
     .icons {
       transition: transform 0.3s ease-in-out;
@@ -55,6 +55,9 @@ footer {
     align-items: flex-start;
     justify-content: flex-start;
     transform: translateX(-160px);
+    letter-spacing: 0.9px;
+    font-weight: 500;
+
     h1 {
       font-weight: 500;
       font-size: 1.3rem;
@@ -78,9 +81,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-weight: 500;
     p {
       font-size: 0.9rem;
       margin-bottom: 3.7px;
+      letter-spacing: 0.9px;
       cursor: pointer;
       &:hover {
         color: rgb(12, 12, 240);
@@ -112,16 +117,18 @@ footer {
 @media (max-width: 768px) {
   footer {
     font-weight: 600;
-    background: rgb(252, 226, 226);
-    background: -moz-linear-gradient(90deg, rgba(255,199,199,1) 3%, rgba(241,8,111,0.5551470588235294) 59%, rgba(199,255,218,1) 100%, rgba(255,247,235,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(255,199,199,1) 3%, rgba(253, 192, 219, 0.45) 59%, rgba(199,255,218,1) 100%, rgba(255,247,235,1) 100%);
-    background: linear-gradient(90deg, rgba(255,199,199,1) 3%, rgba(248, 164, 202, 0.555) 59%, rgba(199,255,218,1) 100%, rgba(255,247,235,1) 100%);
     flex-direction: column;
+    color: white;
+    letter-spacing: 0.7px;
     div {
       flex-direction: column;
     }
     .centre {
       transform: translateX(0px);
+      h1{
+        color: black;
+        font-weight: 700;
+      }
     }
     .left {
       width: 100%;
@@ -136,5 +143,12 @@ footer {
         font-weight: 600;
       }
     }
+    .right{
+      h1{
+        color: black;
+        font-weight: 700;
+      }
+    }
+
   }
 }
