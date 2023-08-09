@@ -7,14 +7,16 @@ import vision from "../../assets/images/vision.png";
 import mission from "../../assets/images/mission.png";
 import philosphy from "../../assets/images/philosophy.png";
 import AOS from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 export default function About() {
   useEffect(() => {
-    AOS.init({duration : 2000})
-  },[])
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <>
-      <h1 className="head-top">About Us</h1>
+      <div className="topper">
+        <h1 className="head-top">About Us</h1>
+      </div>
       <section className="sec1">
         <div>
           <h1>Preschool Activities</h1>
@@ -66,7 +68,7 @@ export default function About() {
       <section className="sec3">
         <div>
           <h1 style={{ color: "white" }}>Preschool Infrastructure</h1>
-          <p>
+          <p data-aos="zoom-in">
             At Little Millennium, we follow a thoughtfully formulated design
             language when deciding on preschool infrastructure, that provides a
             perfect blend of style, aesthetics, reliability, child friendliness
@@ -85,25 +87,30 @@ export default function About() {
       </section>
 
       <section className="sec4 sec3">
-        <img src={logos} data-aos="fade-right"/>
-        <div data-aos="fade-left">
-          <h1>Kickers Club</h1>
-          <p>
+        <img src={logos} data-aos="fade-up" />
+        <div>
+          <h1 data-aos="fade-down">Kickers Club</h1>
+          <p data-aos="fade-down">
             ♛ Little Millennium Kickers Club- India’s First ever Unique Sports
             Curriculum for Pre-schoolers Kickers Club is the first of its kind,
             sports curriculum uniquely designed for kids in the 3-6 years age
             bracket. The curriculum is designed to inculcate –
           </p>
-          <p> ♛ Inculcate love for sports at an early age.</p>
-          <p>
+          <p data-aos="fade-down">
+            {" "}
+            ♛ Inculcate love for sports at an early age.
+          </p>
+          <p data-aos="fade-down">
             ♛ Provide sports training to children through a scientifically
             developed curriculum.
           </p>
-          <p>
+          <p data-aos="fade-down">
             ♛ Learn the spirit of healthy competition, cooperation, teamwork and
             sportsmanship.
           </p>
-          <p>♛ Provide students with a platform to showcase their abilities.</p>
+          <p data-aos="fade-down">
+            ♛ Provide students with a platform to showcase their abilities.
+          </p>
         </div>
       </section>
     </>

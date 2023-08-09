@@ -19,7 +19,9 @@ export default function ContactUs() {
   },[])
   return (
     <div>
+      <div className="topper">
       <h1>Contact Us</h1>
+      </div>
       <div className="contactUs-div">
         <section className="left" data-aos="fade-right">
           <h1>Get In touch with us !</h1>

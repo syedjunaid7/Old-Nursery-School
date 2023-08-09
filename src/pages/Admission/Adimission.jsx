@@ -7,14 +7,16 @@ import icon4 from "../../assets/images/icon3.png";
 import { Tooltip } from "react-tooltip";
 import bird from "../../assets/images/bird.png";
 import AOS from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 export default function Adimission() {
-    useEffect(() => {
-    AOS.init({duration : 2000})
-  },[])
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div>
-      <h1>Admission</h1>
+      <div className="topper">
+        <h1>Admission</h1>
+      </div>
       <div className="admission-container">
         <section className="sec1-Admission">
           <h1>Welcoming Our Children, Back To Their Favorite Preschool.</h1>
@@ -28,19 +30,19 @@ export default function Adimission() {
           </p>
 
           <div className="icons-box">
-            <img src={icon1} alt="logo" />
+            <img data-aos="fade-right" src={icon1} alt="logo" />
             <p>Sceintifically developed curriculum</p>
           </div>
           <div className="icons-box">
-            <img src={icon2} alt="logo" />
+            <img data-aos="fade-right" src={icon2} alt="logo" />
             <span>Well Trained Teachers</span>
           </div>
           <div className="icons-box">
-            <img src={icon3} alt="logo" />
+            <img data-aos="fade-right" src={icon3} alt="logo" />
             <span>Excellent Infrastructure</span>
           </div>
           <div className="icons-box">
-            <img src={icon4} />
+            <img data-aos="fade-right" src={icon4} />
             <span>Blended Learning Approach</span>
           </div>
         </section>
