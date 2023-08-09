@@ -1,6 +1,6 @@
 h1 {
   color: #005ca8;
-  font-size: 3rem;
+
 }
 .cards-box {
   display: flex;
@@ -52,7 +52,7 @@ h3{
   }
 }
 .contactUs-div {
-  background-color: #bf30c05c;
+  background-color: #F4EDFE;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -109,9 +109,7 @@ h3{
   .contactUs-div {
     flex-direction: column;
     padding: 2rem 1rem 5rem 1rem;
-    .map {
-      width: 100%;
-    }
+
     .right {
       height: 60vh;
     }
@@ -121,5 +119,9 @@ h3{
         margin-left: 40px;
       }
     }
+  }
+  .map {
+    margin-left: 31px;
+    margin-bottom: 4rem;
   }
 }

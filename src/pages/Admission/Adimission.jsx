@@ -10,10 +10,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 export default function Adimission() {
   useEffect(() => {
-    AOS.init({ duration: 2000 });
+    AOS.init({ duration: 500 });
   }, []);
   return (
-    <div>
+    <>
       <div className="topper">
         <h1>Admission</h1>
       </div>
@@ -128,6 +128,40 @@ export default function Adimission() {
           </form>
         </section>
       </div>
-    </div>
+      
+      <section className="sec3-Admission">
+          <h1>Admission Process at Little Millennium</h1>
+          <p>
+            The Admission process at Little Millennium is simple and
+            straightforward
+          </p>
+          <div className="process-card" data-aos="zoom-in">
+            <div >
+              <h1>1</h1>
+              <p>Visit our website and fill up the Preschool Admission Form</p>
+            </div>
+            <div>
+              <h1>2</h1>
+              <p>
+                Our admission counsellors will get in touch to understand the
+                requirement
+              </p>
+            </div>
+            <div>
+              <h1>3</h1>
+              <p>
+                Visit the nearest Little Millennium Preschool for a guided tour
+              </p>
+            </div>
+            <div>
+              <h1>4</h1>
+              <p>
+                Complete the enrolment process with assitance from our admission
+                counsellors
+              </p>
+            </div>
+          </div>
+        </section>
+    </>
   );
 }

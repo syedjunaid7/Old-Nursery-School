@@ -1,8 +1,10 @@
+
+
 .admission-container {
   display: flex;
   flex-direction: row;
   padding: 7rem 4rem 4rem 4rem;
-  background: #30ADC0;
+  background: #f4edfe;
   h1 {
     font-size: 2rem;
     font-weight: 600;
@@ -16,25 +18,25 @@
   text-align: left;
   padding: 1rem;
   transform: translate(0px, -50px);
-  img{
+  img {
     width: 14%;
   }
-  .icons-box{
+  .icons-box {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 1rem;
     margin-top: 20px;
-    span{
-      color: white;
+    span {
+      color: black;
     }
   }
-  h1{
-    color: white;
+  h1 {
+    color: black;
     text-align: left;
   }
-  p{
-    color: white;
+  p {
+    color: black;
     margin: 0;
     text-align: left;
     line-height: 2.4rem;
@@ -52,12 +54,12 @@
   padding-bottom: 2rem;
   margin-bottom: 40px;
   position: relative;
-  img{
+  img {
     position: absolute;
     top: -40px;
     right: -13px;
   }
-  
+
   h1 {
     color: white;
   }
@@ -75,32 +77,65 @@
     font-size: 1rem;
   }
 }
-@media (max-width: 768px){
-    .admission-container {
-        flex-direction: column;
-        padding: 1rem;
+.sec3-Admission {
+  background: #dc3c68 url("../../assets/images/aside-bottom-img.png");
+  padding: 5rem ;
+  h1 {
+    margin: 0;
+    color: white;
+  }
+  p {
+    margin: 0;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: white;
+  }
+  .process-card {
+    display: flex;
+    
+    h1{
+      color: black;
     }
-    .sec1-Admission{
-        text-align: center;
-        .icons-box{
-            gap: 0;
-         }
-         img{
-          width: 25%;
-         }
+    p{
+      font-size: 1rem;
+      color: rgb(77, 77, 77);
     }
+    div {
+      background: white;
+      width: 25%;
+      margin: 5%;
+      padding: 1rem 1rem;
+      border-radius: 1rem;
+      box-shadow: 2px 2px 10px rgb(95, 94, 94);
+    }
+  }
+}
+@media (max-width: 768px) {
+  .admission-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .sec1-Admission {
+    text-align: center;
+    .icons-box {
+      gap: 0;
+    }
+    img {
+      width: 25%;
+    }
+  }
 
-    .sec2-Admission{
-        padding: .7rem;
-        padding-bottom: 1rem;
-        button{
-            width: 40%;
-        }
-        .mssgBox{
-            padding: 2rem 1.2rem;
-        }
-        input{
-          width: 85%;
-        }
+  .sec2-Admission {
+    padding: 0.7rem;
+    padding-bottom: 1rem;
+    button {
+      width: 40%;
     }
+    .mssgBox {
+      padding: 2rem 1.2rem;
+    }
+    input {
+      width: 85%;
+    }
+  }
 }
