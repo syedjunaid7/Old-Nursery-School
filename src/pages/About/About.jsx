@@ -19,32 +19,32 @@ export default function About() {
         <h1 className="head-top">About Us</h1>
       </div>
       <section className="sec-top-main">
-        <div className="content">
+        <div className="content" data-aos="fade-right">
           <h1>
             Little Millennium® <br />
             Preschool
           </h1>
           <p>
-            The fastest-growing preschool
-            <br /> chain in India.
+            The fastest-growing <br />pres <span style={{'color':"white"}}>- chool
+             ch</span><span>ain in India.</span>
           </p>
         </div>
-        <div className="stats-box-main">
-          <div className="stats-div">
+        <div className="stats-box-main" data-aos="fade-left">
+          <div className="stat-circle">
             <h2>
               <CountUp className="countUp" start={0} end={200} duration={4} />
               <span>K</span>
             </h2>
             <h1>HAPPY CHILDREN</h1>
           </div>
-          <div className="stat-2">
+          <div className="stat-circle">
             <h2>
               <CountUp className="countUp" start={0} end={5} duration={4} />
               <span>K</span>
             </h2>
             <h1>CITIES</h1>
           </div>
-          <div className="stat-3">
+          <div className="stat-circle">
             <h2>
               <CountUp className="countUp" start={0} end={20} duration={4} />
             </h2>

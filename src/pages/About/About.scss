@@ -31,74 +31,30 @@ h1 {
       font-weight: 500;
       color: #005ca8;
       margin: 0;
-    }
-  }
-  .stats-div {
-    background: url("../../assets/images/about-counter-bg.png");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    text-align: right;
-    height: 25vh;
-    width: 11%;
-    bottom: 10%;
-    right: 20%;
-    position: absolute;
-    animation: moveStat 3s linear infinite;
-  }
-  h2 {
-    margin: 0;
-  }
-  h1 {
-    margin: 0;
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  @keyframes moveStat {
-    0%,
-    100% {
-      transform: translateY(5%);
-    }
-    50% {
-      transform: translateY(calc(-5%));
-    }
-  }
-  .stat-2 {
-    background: url("../../assets/images/about-counter-bg.png");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    text-align: right;
-    height: 25vh;
-    width: 11%;
-    bottom: 10%;
-    right: 5%;
-    position: absolute;
-    animation: moveStat 3s linear infinite;
-  }
-  h2 {
-    margin: 0;
-  }
-  h1 {
-    margin: 0;
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  @keyframes moveStat {
-    0%,
-    100% {
-      transform: translateY(5%);
-    }
-    50% {
-      transform: translateY(calc(-5%));
+      span{
+        color: black;
+      }
     }
   }
 
-  .stat-3 {
+  .stats-box-main {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    animation: moveStat 3s linear infinite;
+    margin-right: 6%;
+    margin-top: 3%;
+    @keyframes moveStat {
+      0%,
+      100% {
+        transform: translateY(5%);
+      }
+      50% {
+        transform: translateY(calc(-5%));
+      }
+    }
+  }
+  .stat-circle {
     background: url("../../assets/images/about-counter-bg.png");
     display: flex;
     justify-content: center;
@@ -107,11 +63,7 @@ h1 {
     background-repeat: no-repeat;
     text-align: right;
     height: 25vh;
-    width: 11%;
-    bottom: 10%;
-    right: 35%;
-    position: absolute;
-    animation: moveStat 3s linear infinite;
+    width: 12%;
   }
   h2 {
     margin: 0;
@@ -120,15 +72,6 @@ h1 {
     margin: 0;
     text-align: center;
     font-size: 1.5rem;
-  }
-  @keyframes moveStat {
-    0%,
-    100% {
-      transform: translateY(5%);
-    }
-    50% {
-      transform: translateY(calc(-5%));
-    }
   }
 }
 
@@ -259,12 +202,13 @@ h1 {
   }
 }
 @media (max-width: 768px) {
-  h1{
+  h1 {
     font-size: 1.8rem;
   }
   .sec-top-main {
     background-size: contain;
     padding: 0;
+
     .content {
       padding-top: 2rem;
       padding-left: 4rem;
@@ -276,46 +220,22 @@ h1 {
       }
     }
     .stats-box-main {
-      transform: scale(0.7);
-      margin-top: 110%;
-    }
-    .stats-div {
-      width: 100%;
-      left: 74%;
-      h1 {
-        font-size: 1rem;
-        margin-right: 220px;
-      }
-      h2 {
-        margin-right: 208px;
-        margin-top: -28px;
-      }
-      p {
-        font-size: 0.8rem;
-      }
-    }
-    .stat-2 {
-      right: -28%;
-      width: 100%;
-      h1 {
-        font-size: 1rem;
-        margin-right: 230px;
-      }
-      h2 {
-        margin-right: 232px;
-        margin-top: -23px;
-      }
-    }
-    .stat-3 {
-      right: 18%;
-      width: 100%;
-      h1 {
-        font-size: 1rem;
-        margin-right: 230px;
-      }
-      h2 {
-        margin-right: 232px;
-        margin-top: -23px;
+      gap: 0;
+      margin-top: 70%;
+      margin-right: 0;
+      .stat-circle {
+        width: 100%;
+        transform: scale(0.9);
+        background-size: contain;
+        h2 {
+          margin: 0;
+          font-size: 1.5rem;
+        }
+        h1 {
+          margin: 0;
+          margin-bottom: 4rem;
+          font-size: 1rem;
+        }
       }
     }
   }
